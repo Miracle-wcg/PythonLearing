@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>3400名中国游客韩国济州岛拒下国际邮轮 _网易新闻</title>
+    <script type="text/javascript">
+    /*
+    * 调至wap站
+    */
+    function jumpToWAP() {
+        if(/noredirect/i.test(location.search)) return;
+        var domainBlockedList = ["play.163.com"];  //屏蔽的domain
+        var currentURL = window.location.href;
+        var forwardURL = forwardURLFromExternal();
+        if(forwardURL) {
+            window.location.href = forwardURL;
+        }
+        function forwardURLFromExternal() {
+            //URL的兼容（android版weixin等）
+            var origURL = self.URL;
+            var nativeURL;
+            try {
+                if (origURL) {
+                    nativeURL = new self.URL('http://3g.163.com');
+                    if ('searchParams' in nativeURL) {
+//                        return;
+                    }
+                    if (!('href' in nativeURL)) {
+                        nativeURL = undefined;
+                    }
+                }
+            } catch (_) {}
+            var URLUtils = function (url) {
+                if (nativeURL) {
+                    return new origURL(url);
+                }
+                var anchor = document.createElement('a');
+                anchor.href = url;
+                return anchor;
+            }
+            var pass;    //是否调至wap
+            var urlObj = new URLUtils(currentURL);
+            var domain = urlObj.hostname;
+            pass = (domainBlockedList.indexOf(domain) === -1) && (/android.*?mobile|ipod|blackberry|bb\d+|phone/i.test(navigator.userAgent));
+            if ( pass ) {
+                var match;
+                var currentSearch = urlObj.search.length > 0 ? urlObj.search.substring(1) : "";
+                var currentHash = urlObj.hash;
+                if( currentSearch.length > 0 && currentSearch[0] !== "&" ) {
+                    currentSearch = "&" + currentSearch;
+                }
+                var referrer = document.referrer;
+                // 文章
+                // http://news.163.com/16/0224/09/BGJ2G4B30001124J.html
+                // >> http://3g.163.com/touch/article.html?docid=BGJ2G4B30001124J
+                if(match = /([A-Z0-9]{16})(_mobile)?\.html/.exec(currentURL)) {
+                    var docid = match[1];
+                    return "http://3g.163.com/touch/article.html?docid=" + docid + "&qd=pc_adaptation" + currentSearch + "&refer=" + encodeURIComponent(referrer) + currentHash;
+                    // 图集
+                    // http://news.163.com/photoview/3R710001/107233.html#p=BC5B3DKL3R710001
+                    //  >> http://3g.163.com/touch/photoview.html?setid=107233&channelid=0001
+                } else if(match = /\/photoview\/([0-9A-Z]{8})\/(\d{1,7})(_mobile)?\.html/.exec(currentURL)) {
+                    var channelId = match[1].substr(-4,4);
+                    var setId = match[2];
+                    return "http://3g.163.com/touch/photoview.html?setid=" + setId + "&channelid=" + channelId + "&qd=pc_adaptation" + currentSearch + "&refer=" + encodeURIComponent(referrer) + currentHash;
+                } else {
+                    pass = false;
+                }
+            }
+            return pass;
+        }
+    }
+    jumpToWAP.call(window);
+</script>
+<link href="http://img1.cache.netease.com/f2e/products/photoset/mobile/collect/head~NSwOGLyRRyep.css" rel="stylesheet" />
+</head>
+  <body ne-module="/products/photoset/mobile/endpage.js" ne-plugin="/m/plugins/gesture.js">
+    <input type="hidden" id="channelId" value="0001">
+    <input type="hidden" id="docId" value="CFBP657F0001875O" />
+    <input type="hidden" id="boardId" value="news_guoji2_bbs" />
+    <header class="header">
+      <a class="endpage-back-wrap" ne-href="{{endpageRefer}}"></a><span class="logo news"></span>
+    </header>
+          <section class="container">
+        <section>
+          <article id="articleBody" class="article-text">
+            <input type="hidden" id="docId" value="CFBP657F0001875O" />
+            <input type="hidden" id="boardId" value="news_guoji2_bbs" />
+            <h1 class="article-title" data-article-title>3400名中国游客韩国济州岛拒下国际邮轮 </h1>
+            <div class="article-subtitle">
+              <span class="article-time" data-article-time>2017-03-12 19:35:02</span>
+               来源: <a class="article-source" href="#" data-article-source>环球时报-环球网</a>               <a href="javascript:" class="article-count" ne-tap="showTie()">有<span class="js-tiecount">0</span>人参与</a>
+            </div>
+            <div class="article-body" data-article-body>
+              <p>这是国际邮轮从1990年代末停靠济州以来，20多年间首次有乘客集体拒绝下船事件发生。</p><p>今天，环环在韩国媒体上看到一条“大新闻”。</p><p class="f_center"><img alt="3400名中国游客韩国济州岛拒下国际邮轮 " data-s="300,640" data-type="png" data-ratio="0.7125171939477304" data-w="727" src="http://cms-bucket.nosdn.127.net/catchpic/4/4b/4b4f71538bbfe5c024bae50ce6275068.jpg?imageView&thumbnail=550x0" width="600" height="428" style="border: 0px; vertical-align: bottom; display: block; margin: 0px auto; max-width: 100%; height: auto;" /></p><p style="text-align: center;">韩联社报道截图</p><p>据韩联社12日报道，正当中国发出“旅游禁韩令”持续发酵之时，韩国首次发生了乘坐国际邮轮来到济州的3400余名中国团体游客拒绝下船事件。</p><p><strong>根据济州道方面传出的消息，11日下午1时，国际邮轮歌诗达邮轮赛琳娜号抵达济州外港。但该邮轮通报说，船上3400余名中国团体游客拒绝下船。当时济州方面的出入境、海关、检验检疫人员已经做好准备，因此对于中国游客的举动感到非常难以置信。</strong></p><p class="f_center"><img alt="3400名中国游客韩国济州岛拒下国际邮轮 " data-s="300,640" data-type="png" data-ratio="0.6056338028169014" data-w="497" src="http://cms-bucket.nosdn.127.net/catchpic/4/4f/4f43ec53fa183ee88ad4941e60224cef.jpg?imageView&thumbnail=550x0" style="border: 0px; vertical-align: bottom; display: block; margin: 0px auto; max-width: 100%; height: auto;" /></p><p style="text-align: center;">韩联社配图</p><p>韩国海运工会相关负责人表示，最近虽然也有部分中国游客拒绝下船，但如此大规模的全船人员拒绝下船事情还是第一次发生。当时码头上已经有80余台观光大巴在等候，济州免税店等购物场所和数十名导游也做好了接待准备，当得知中国游客聚集下船的消息，都感到白忙一场。</p><p>据韩媒报道，此次乘船的游客全部来自中国一家企业的奖励观光团，有分析认为，这或许与“萨德”有关。</p><p>“萨德报复成为现实”，韩国纽西斯通讯社12日的报道这样评价中国游客集体拒绝下船事件。报道称，作为应对部署“萨德”的反制措施之一，中国方面已经严控本国公民赴韩旅游，从3月16日以后，中国游客将从来韩的国际邮轮上全面消失。</p><p class="f_center"><img alt="3400名中国游客韩国济州岛拒下国际邮轮 " data-s="300,640" data-type="png" data-ratio="0.5944055944055944" data-w="1001" src="http://cms-bucket.nosdn.127.net/catchpic/4/4b/4bf757e3b0e4ad092ab4af1d0be10fff.jpg?imageView&thumbnail=550x0" width="600" height="357" style="border: 0px; vertical-align: bottom; display: block; margin: 0px auto; max-width: 100%; height: auto;" /></p><p style="text-align: center;">韩国纽西斯通讯社报道截图</p><p>此次歌诗达邮轮赛琳娜号从日本福冈驶来，在经过4小时后，于11日下午5时离开济州，驶往下一目的地天津港。据了解，这是国际邮轮从1990年代末停靠济州以来，20多年间首次有乘客集体拒绝下船事件发生。</p><p>韩国媒体说，由于中国方面严格限制赴韩旅游，歌诗达下属的2艘游轮从本月16日至6月30日赴济州的停靠计划全部取消，总班次为26次。根据去年平均每艘歌诗达邮轮搭载中国乘客2300人计算，仅歌诗达邮轮方面就将少给济州带来12万中国游客。</p><p>有分析认为，今后邮轮取消赴济州的例子还将增多。</p><p><br  /></p>
+            </div>
+            <div class="article-footer">
+              <a href="http://news.163.com/"><img src="http://img1.cache.netease.com/cnews/css13/img/end_news.png" width="13" height="12" class="icon"></a>
+               本文来源：<a href="#" class="article-source" data-article-source>环球时报-环球网</a>             </div>
+          </article>
+        </section>
+        <section class="article-recommend">
+          <ul id="articleRecommend" data-loaded="0">
+          </ul>
+        </section>
+      </section>
+    <aside class="aside">
+      <ul>
+        <li class="share-wrap" ne-tap="showShare()">
+          <a class="icon-share aside-nav " href="javascript:;">
+            <span>分享</span>
+          </a>
+        </li>
+        <li ne-tap="showTie()">
+          <a class="icon-gentie aside-nav" href="javascript:;">
+            跟贴 <span class="js-tiecount">0</span>
+          </a>
+        </li>
+      </ul>
+      <span class="unfold-btn icon-plus" ne-tap="toggleAside()"></span>
+    </aside>
+    <div class="tie-main" id="tieMainBody">
+      <h4>网友跟贴</h4>
+      <ul class="commentbox-wrap">
+      </ul>
+      <div class="clearfix" ne-tap="showTie()">
+        <span class="tie-btn-large js-tie-btn-large">
+          <span class="js-tiecount"></span>人跟贴，<span class="js-totalcount"></span>人参与
+        </span>
+      </div>
+    </div>
+    <div class="js-ad ad-area">
+      <a class="link" target="_blank" href="">
+        <img />
+      </a>
+    </div>
+    <footer class="footer">
+      &copy;1997-2015 网易公司版权所有
+    </footer>
+    <!-- 弹层图集 -->
+    <div class="photoset active m-hide" ne-state="nohash:1" ne-module="/products/photoset/mobile/modules/photoset/photoset.js"><div ne-id="photoset" ne-module="/modules/photoset/photoset2.js" ne-state="slide:shift;fixedH:1;fullscreen:1;idKey:photoid;noLoop:1;autofit:1">
+  <div class="ne-photoset">
+    <div>
+      <div class="photoarea" ne-role="wrap photoarea" ne-swipe="photoSwipe()" ne-swiping="photoSwiping()" ne-pinch="photoPinch()">
+        <div class="photo-wrap" ne-repeat="photo in curList"><a class="photo-wrap-inner" ne-href="{{photo.url}}"><img ne-src="{{photo.imgurl}}" /></a></div>
+      </div>
+      <div class="top-line">
+        <span class="photoset-back-wrap" ne-tap="hidePhotoset()" ne-show="isEndpage" style="display:none"></span>
+        <a ne-href="{{galleryRefer}}" class="photoset-back-wrap photoset-back-refer" ne-show="galleryRefer" style="display:none"></a>
+        <a class="logo news"></a>
+        <div class="photoset-index" ne-show="list.length" style="display:none">
+          <span class="current">{!{state.cursor+1 || 1}}</span>/<span class="total">{!{list.length}}</span>
+        </div>
+        <span class="icon-share" ne-tap="showShare()"></span>
+        <span class="icon-gentie" ne-tap="showTie()"></span>
+      </div>
+      <div class="photoset-caption">
+        <div class="photoset-caption-inner" ne-show="list.length" style="display:none">
+          <div class="photoset-title">{!{list[state.cursor].imgtitle||title}}</div>
+          <div class="photoset-content">{!{list[state.cursor].note}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- 分享 -->
+    <div class="ntshare-wrap m-hide" ne-module="/products/photoset/mobile/modules/share/share.js" ne-plugin="/m/plugins/sidebar.js" ne-plugin-state="name:share;position:down">
+<div ne-module="/modules/shares/shares.js" ne-id="share">
+  <div class="ntshare-wrap-inner">
+    <div class="share-title">分享到</div>
+    <ul class="share-list clearfix">
+      <li class="ntshare-item"><a class="icon-yixin" data-share="yixin" title="yixin">易信</a></li>
+      <li class="ntshare-item"><a class="icon-lofter" data-share="lofter" title="lofter">LOFTER</a></li>
+      <li class="ntshare-item"><a class="icon-sina" data-share="sina" title="sina">新浪微博</a></li>
+      <li class="ntshare-item"><a class="icon-qzone" data-share="qzone" title="qzone">腾讯空间</a></li>
+      <li class="ntshare-item"><a class="icon-renren" data-share="renren" title="renren">人人网</a></li>
+      <li class="ntshare-item"><a class="icon-youdao" data-share="youdao" title="youdao">有道云笔记</a></li>
+    </ul>
+    <div class="cancel-btn" ne-tap="closeShare()">取&nbsp;消</div>
+  </div>
+</div>
+</div>
+    <!-- 跟贴 -->    
+    <div class="tie-wrap m-hide" ne-module="/products/photoset/mobile/modules/tie/tie.js" ne-plugin="/m/plugins/sidebar.js" ne-plugin-state="name:tie"><div class="top-line">
+  <span class="tie-back-wrap" ne-tap="hideTie()"><span class="tie-back"></span></span>跟贴
+</div>
+<div class="tie-wrap-inner">
+  <div class="tie-wrap-content" ne-module="/modules/tie/m_tie.js" ne-state-extend="state" ne-state="scrollWrap:.tie-wrap-content">
+<script type="text/template" ne-macro="userInfoPart()">
+	<div class="js-title-user">
+		<% if ( state.userData ) { %>
+			<span class="title-nickname"><%= state.userData.nickname %></span>
+			<span class="title-exit" ne-click="userExit()">退出</span>
+		<% } else { %>
+			<span class="title-login" ne-click="userLogin()">登录</span>
+		<% } %>
+	</div>
+</script>
+<script type="text/template" ne-macro="operatePart(tie)">
+	<div class="operate-row">
+		<% if ( tie._ext.fresh ) { %>
+			<span class="pub-ok-tip">发布成功！</span>
+		<% } else {  %>
+			<div class="show-all-cnt z-hidden">显示全部</div>
+			<div ne-click="vote(%tie%)">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/<%= tie._ext.voted ? 'tie_top_over_28.png' : 'tie_top_28.png'%>" class="i-top">
+				<span class="top-num"><%= tie.vote %></span>
+			</div>
+			<div ne-click="tglInput(%tie%)">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/tie_reply_32.png" class="i-reply">
+			</div>
+			<div ne-click="share(%tie%)">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/tie_share_26.png" class="i-share">
+			</div>
+		<% }  %>
+	</div>
+</script>
+<script type="text/template" ne-macro="authorPart(tie)">
+	<div class="author-nickname"><%= tie.anonymous ? "火星网友" : tie.nickname %></div>
+	<div class="author-info">
+		<span>[<%= tie.siteName + tie.user.location %>网友]</span>
+		<span><%= util.formatDate(tie.createTime) %></span>
+	</div>
+</script>
+<script type="text/template" ne-macro="photoPart(user)">
+	<div class="photo" statistic="GTnews_authAvatar">
+		<img src="<%= user.avatar ? user.avatar : 'http://img5.cache.netease.com/tie/images/noface80_80.png' %>">
+	</div>
+</script>
+<script type="text/template" ne-macro="contentPart(tie)">
+	<p class="tie-cnt"><%= tie.content %></p>
+</script>
+<script type="text/template" ne-macro="floorPart(quote)">
+	<% if(quote){ %>
+		<% if (quote._ext.style === "parallel") { %>
+			<%= floorPart(quote.quote) %>
+		<% } %>
+		<% if (quote._ext.visible) { %>
+			<div class="floor-tie <%= quote._ext.style === 'parallel' ? 'z-parallel-floor' : '' %>">
+		<% } %>
+		<% if (quote._ext.style === "nested") { %>
+			<%= floorPart(quote.quote) %>
+		<% } %>
+		<% if(quote._ext.visible){ %>
+				<div class="floor-tie-self">
+					<% if(quote._ext.foldFlr){ %>
+						<div class="floor-tie-self">
+							<div class="hide-middle-posts" ne-click="expandFlr(tie)"><span class="hide-flr-txt">展开隐藏楼层</span>
+								<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/expand_floor_26.png" class="hide-flr-icon">
+							</div>
+						</div>
+					<% } else { %>
+						<div class="tie-author">
+							<%= authorPart(quote) %>
+	    					<span class="floor-NO"><%= quote.buildLevel %></span>
+						</div>
+						<%= contentPart(quote) %>
+						<%= operatePart(quote) %>
+					<% } %>
+				</div>
+			</div>
+		<% } %>
+	<% } %>
+</script>
+<script type="text/template" ne-macro="trunkPart(tie)">
+	<div class="single-tie">
+		<%= photoPart(tie.user) %>
+		<div class="tie-bdy">
+			<div class="bdy-inner">
+				<div class="tie-author"><%= authorPart(tie) %></div>
+				<%= floorPart(tie.quote) %>
+				<%= contentPart(tie) %>
+				<%= operatePart(tie) %>
+			</div>
+		</div>
+	</div>
+</script>
+<div ne-plugin="/m/plugins/gesture.js" class="tie-sdk-wrapper">
+	<div class="tie-title-bar">
+		<div class="title-tab" ne-click="changeTab()" ne-class="{{view.both?'z-choice':''}}">
+			<span class="tab-item" ne-class="{{view.tab === 'hotList' ? 'z-top' : 'z-btm'}}">热门</span>
+			<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/split_arrow_14.png" class="i-tab-split">
+			<span class="tab-item" ne-class="{{view.tab === 'newList' ? 'z-top' : 'z-btm'}}">最新</span>
+		</div>
+		<script type="text/template" ne-if="1">
+			<%= userInfoPart() %>
+		</script>
+	</div>
+	<div class="tie-panel-bar">
+		<div class="tie-list" ne-show="{{view.tab === 'hotList'}}">
+			<script type="text/template" ne-repeat="tie in hotList">
+				<%= trunkPart(tie) %>
+			</script>
+		</div>
+		<div class="tie-list" ne-show="{{view.tab === 'newList'}}">
+			<script type="text/template" ne-repeat="tie in newList">
+				<%= trunkPart(tie) %>
+			</script>
+		</div>
+		<div class="tie-empty-tip" ne-if="{{view.empty}}">暂无数据</div>
+		<div class="tie-loading" ne-if="{{view.loading}}"><div class="load-box">正在载入...</div></div>
+		<div class="tie-no-more" ne-if="{{view.noMore}}">
+			<div class="no-more-box">已无更多数据</div>
+		</div>
+	</div>
+	<div class="tie-input-bar" ne-class="{{state.input === 'read' ? 'z-read' : 'z-write'}}">
+		<div class="input-read">
+			<div class="read-box">
+				<div class="box-shape" ne-click="tglInput()">
+					<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/write_tie_27.png" class="i-write-tie"><span>写跟贴</span>
+				</div>
+			</div>
+			<div class="read-total" ne-click="backTop()">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk_dev/mobile/icons/tie_reply_32.png" class="i-reply"><span class="total-num">{{threadInfo.joinCount}}</span>
+			</div>
+		</div>
+		<div class="input-write">
+			<div class="submit-row">
+				<span class="submit-cancel" ne-click="tglInput()">取消</span>
+				<span class="submit-ok" ne-click="submit()" ne-class="{{postData.content.length >= 2 ? 'z-enabled':''}}">发布</span>
+			</div>
+			<div class="input-row">
+				<textarea name="content" class="input-txt" placeholder="写跟贴" ne-model="postData.content"></textarea>
+				<input type="hidden" name="parentId" ne-model="postData.parentId">
+				<input type="hidden" ne-model="postData.fromDocId">
+			</div>
+		</div>
+	</div>
+	
+	<div id="sharePopup" class="share-popup" ne-module="/modules/shares/shares.js" ne-state-extend="{{shareState}}" ne-show="{{shareState}}">
+		<h3 class="share-title">分享到</h3>
+		<div class="share-links">
+			<a href="" class="link" target="_blank" ne-click="share('yixin')">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk/mobile/icons/share_yixin_74.png" class="link-icon">
+				<span class="link-txt">易信</span>
+			</a>
+			<a href="" class="link" target="_blank" ne-click="share('qzone')">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk/mobile/icons/share_qzone_74.png" class="link-icon">
+				<span class="link-txt">QQ空间</span>
+			</a>
+			<a href="" class="link" target="_blank" ne-click="share('weibo')">
+				<img src="https://img1.ws.126.net/f2e/tie/yun/sdk/mobile/icons/share_weibo_74.png" class="link-icon">
+				<span class="link-txt">新浪微博</span>
+			</a>
+		</div>
+		<div class="share-close" ne-click="clsShare()">
+			<img src="https://img1.ws.126.net/f2e/tie/yun/sdk/mobile/icons/share_cls_70.png" class="cls-btn">
+		</div>
+	</div>
+	<div class="share-mask" ne-show="{{shareState}}"></div>
+</div></div>
+</div>
+</div>
+<script type="text/template" id="tbAd">
+  tanx_c = window.tanx_c || {};
+  tanx_c.mm_16143929_2253494_31570613 = {widthEl:'PARENT',response:'TRUE'};
+  tanx_s = document.createElement("script");
+  tanx_s.type = "text/javascript";
+  tanx_s.charset = "gbk";
+  tanx_s.id = "tanx-s-mm_16143929_2253494_31570613";
+  tanx_s.async = true;
+  tanx_s.src = "http://p.tanx.com/ex?i=mm_16143929_2253494_31570613&m=1";
+  tanx_h = document.getElementsByTagName("head")[0];
+  if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+</script>
+<script src="http://img2.cache.netease.com/f2e/products/photoset/mobile/collect/foot~Mbd6OVwW84RM.js" charset="utf-8"></script>
+<script>if(/AO1M73FS00014JB6/.test(bowlder("#docId").val())){
+  bowlder("#docId").val("");
+  bowlder(".js-tie-btn-large").html("跟贴已关闭");
+}</script>
+<!-- START WRating v1.0 -->
+    <script type="text/javascript">
+    (function(){
+      var STAT_CODE = {
+        "0001": {
+          "nacc": "news",
+          "vjacc": "860010-0502010100"
+        },
+        "0003": {
+          "nacc": "ent",
+          "vjacc": "860010-0504010000"
+        },
+        "0005": {
+          "nacc": "sports",
+          "vjacc": "860010-0505010000"
+        },
+        "0006": {
+          "nacc": "travel",
+          "vjacc": "860010-0513010000"
+        },
+        "0007": {
+          "nacc": "house",
+          "vjacc": "860010-0521010000"
+        },
+        "0008": {
+          "nacc": "auto",
+          "vjacc": "860010-0508010000"
+        },
+        "0009": {
+          "nacc": "tech",
+          "vjacc": "860010-0509010000"
+        },
+        "0010": {
+          "nacc": "house",
+          "vjacc": "860010-0521010000"
+        },
+        "0011": {
+          "nacc": "mobile",
+          "vjacc": "860010-0509010000"
+        },
+        "0016": {
+          "nacc": "digi",
+          "vjacc": "860010-0509010000"
+        },
+        "0023": {
+          "nacc": "gov",
+          "vjacc": "860010-0502010100"
+        },
+        "0025": {
+          "nacc": "stock",
+          "vjacc": "860010-0507010000"
+        },
+        "0026": {
+          "nacc": "lady",
+          "vjacc": "860010-0506010000"
+        },
+        "0029": {
+          "nacc": "edu",
+          "vjacc": "860010-0515010000"
+        },
+        "0030": {
+          "nacc": "tie",
+          "vjacc": "860010-0529010000"
+        },
+        "0031": {
+          "nacc": "game",
+          "vjacc": "860010-0516010000"
+        },
+        "0038": {
+          "nacc": "jiankang",
+          "vjacc": "860010-0520010000"
+        },
+        "0082": {
+          "nacc": "jiu",
+          "vjacc": "860010-0525010000"
+        },
+        "0085": {
+          "nacc": "163v",
+          "vjacc": "860010-0593010000"
+        },
+        "0087": {
+          "nacc": "house",
+          "vjacc": "860010-0521010000"
+        },
+        "0091": {
+          "nacc": "edu",
+          "vjacc": "860010-0519010000"
+        },
+        "0092": {
+          "nacc": "book",
+          "vjacc": "860010-0512010000"
+        }
+      };
+      var head = document.head || document.getElementsByTagName('head')[0] || document.documentElement;
+      var channelId = document.getElementById('channelId').value;
+      var statInfo = STAT_CODE[channelId] || STAT_CODE["0001"];
+      var stat1 = document.createElement('script');
+      stat1.src = "http://analytics.163.com/ntes.js";
+      head.insertBefore(stat1, head.lastChild);
+      stat1.onload = stat1.onreadystatechange = function(){
+        if(!this.readyState || this.readyState == "loaded" || this.readyState == "complete"){
+          _ntes_nacc = statInfo.nacc;
+          neteaseTracker();
+          neteaseTracker(false, "http://mobiapt." + location.href.split('http://')[1], "", "mobiapt");
+          window.bowlder && bowlder.emit('devilfish.ready');
+          this.onload = this.onreadystatechange = null;
+        }
+      };
+      var stat2 = document.createElement('script');
+      stat2.src = "http://img6.cache.netease.com/common/script/wrating.js";
+      head.insertBefore(stat2, head.lastChild);
+      stat2.onload = stat2.onreadystatechange = function(){
+        if(!this.readyState || this.readyState == "loaded" || this.readyState == "complete"){
+          vjAcc = statInfo.vjacc;
+          wrUrl="http://163.wrating.com/";
+          vjEventTrack();
+          this.onload = this.onreadystatechange = null;
+        }
+      }
+    }).call(this);
+    bowlder.conf({alias:{'/products/photoset/mobile/plugin/gesture.js':'/m/plugins/gesture.js'}});
+    </script>
+    <!-- END NetEase Analytics 2006 -->
+<style>
+.js-ad {display:none;}
+.aticle-ad-container {display:none;}
+.article-ad-banner img {display: block;}
+.article-ad-text { background: url(http://img1.cache.netease.com/3g/img14/zhuzhan/tuiguang.png) no-repeat right center; background-size: 28px; display: block; font-size: 16px; color: #000;}
+.article-ad-list li {border-bottom: 1px solid #ddd;margin: 0 13px 13px;padding-bottom:13px;}
+.article-ad-list li:last-child {border-bottom: none;margin-bottom: 0;}
+.article-ad-mixed {border: 1px solid #ddd;}
+.article-ad-mixed .article-ad-text {margin: 8px;}
+.article-ad-random > .article-ad-banner {display: none;}
+#atiAdTextd01 {margin: 26px 0;}
+#atiAdTextd02 {margin: 26px 0;}
+#atiAdMixed02 {margin: 0 13px 26px 13px;}
+#atiAdRandom01 {margin-bottom: 26px;}
+#atiJdAdContainer { padding: 13px; overflow: hidden; }
+#atiJdAdIframe { width: 310px; height: 70px; overflow: hidden; -o-transform-origin: 0 0; -ms-transform-origin: 0 0; -moz-transform-origin: 0 0; -webkit-transform-origin: 0 0; transform-origin: 0 0; }
+#atiTaoAdContainer { overflow: hidden; }
+#atiTaoAdContent { width: 600px; height: 140px; overflow: hidden; -o-transform-origin: 0 0; -ms-transform-origin: 0 0; -moz-transform-origin: 0 0; -webkit-transform-origin: 0 0; transform-origin: 0 0; }
+</style>
+<div class="aticle-ad-container">
+    <!-- 轮替通栏01 -->
+    <!-- <div id="atiAdRandom01" class="article-ad-random">
+    <div class="article-ad-banner"><a href="http://g.163.com/a?CID=41384&Values=3964234192&Redirect=http://g.hsdzm.com/c?z=ran10&la=0&si=77&ci=70&cg=142&c=631&or=641&l=889&bg=889&b=987&u=http://163.cqwsk.cn/wapchaye"><img src="http://img1.126.net/channel12/022199/1080170_0420.jpg"></a></div>
+    <div class="article-ad-banner"><a href="http://g.163.com/a?CID=41384&Values=3964234192&Redirect=http://g.hsdzm.com/c?z=ran10&la=0&si=77&ci=70&cg=142&c=631&or=641&l=889&bg=889&b=987&u=http://163.cqwsk.cn/wapchaye"><img src="http://img1.126.net/channel12/022199/1080170_0420.jpg"></a></div>
+</div> -->    <!-- 图文通栏01 -->
+    <!-- <div id="atiAdMixed01" class="article-ad-mixed">
+    <div class="article-ad-banner"><a href="http://yuedu.163.com/"><img src="http://img2.126.net/xoimages/yuedu/20140101/xx/620x100.gif"></a></div>
+    <div class="article-ad-text"><a href="http://yuedu.163.com/">网易云阅读，抢先下载</a></div>
+</div> -->    <!-- 图文通栏02 -->
+    <!-- <div id="atiAdMixed02" class="article-ad-mixed">
+    <div class="article-ad-banner"><a href="http://g.163.com/a?CID=39581&Values=1920285938&Redirect=http://vitara.changansuzuki.com/h5/"><img src="http://img1.126.net/channel4/021499/ca620100_1223.jpg"></a></div>
+    <div class="article-ad-text"><a href="http://g.163.com/a?CID=39581&Values=1920285938&Redirect=http://vitara.changansuzuki.com/h5/">敢做 敢拼，I'm VITARA</a></div>
+</div> -->    <!-- 京东广告 -->
+    <!-- 京东广告  -->    <!-- 文字链01 -->
+    <ul id="atiAdTextd01" class="article-ad-list">
+<li><div class="article-ad-text"><a href="http://www.163.com/">*爆:双色球2元中500万秘籍</a></div></li>
+<li><div class="article-ad-text"><a href="http://3g.163.com/links/6489">*谁为谁一炮上位</a></div></li>
+</ul>    <!-- 文字链02 -->
+    <!-- <ul id="atiAdTextd02" class="article-ad-list">
+    <li><div class="article-ad-text"><a href="http://3g.163.com/links/3431">*新闻客户端获最佳移动应用奖</a></div></li>
+    <li><div class="article-ad-text"><a href="http://g.163.com/a?CID=34810&Values=2098237988&Redirect=http://wap.haxiu.org/show_48321.html?oda_pick_aid=798265">*揭秘:让少妇瞬间满足的秘诀 </a></div></li>
+</ul> -->   
+    <!-- 淘宝广告 -->
+    <div id="atiTaoAdContainer">
+        <div id="atiTaoAdContent">
+            <script type="text/javascript">
+                tanx_c = window.tanx_c || {};
+                tanx_c.mm_16143929_2253494_29344410 = {widthEl:'PARENT',response:'TRUE'};
+                document.write('<a style="display:none!important" id="tanx-a-mm_16143929_2253494_29344410"></a>');
+                tanx_s = document.createElement("script");
+                tanx_s.type = "text/javascript";
+                tanx_s.charset = "gbk";
+                tanx_s.id = "tanx-s-mm_16143929_2253494_29344410";
+                tanx_s.async = true;
+                tanx_s.src = "http://p.tanx.com/ex?i=mm_16143929_2253494_29344410&m=1";
+                tanx_h = document.getElementsByTagName("head")[0];
+                if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+            </script>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+(function(){
+    
+    var doc = document
+        ,atiBody = doc.getElementById("articleBody")
+        ,atiTie = doc.getElementById("tieMainBody")      
+        ,atiAdRandom01 = doc.getElementById("atiAdRandom01")
+        ,atiAdMixed01 = doc.getElementById("atiAdMixed01")
+        ,atiAdTextd01 = doc.getElementById("atiAdTextd01")
+        ,atiAdTextd02 = doc.getElementById("atiAdTextd02")
+        ,atiAdMixed02 = doc.getElementById("atiAdMixed02")
+        ,atiJdAdContainer = doc.getElementById("atiJdAdContainer")
+        ,atiJdAdIframe = doc.getElementById("atiJdAdIframe")
+        ,atiTaoAdContainer = doc.getElementById("atiTaoAdContainer")
+        ,atiTaoAdContent = doc.getElementById("atiTaoAdContent");
+    apendBefore(atiAdRandom01, atiBody);
+    apendAfter(atiAdMixed01, atiBody);  
+    apendAfter(atiTaoAdContainer, atiBody);  
+    
+    
+    insertBefore(atiJdAdContainer, atiTie);   
+    insertBefore(atiAdTextd01, atiTie);
+    insertAfter(atiAdMixed02, atiTie);
+    insertAfter(atiAdTextd02, atiTie);   
+  
+    atiAdRandom01 && adRandom(atiAdRandom01.children);
+    document.addEventListener("DOMContentLoaded", mainScale);
+    function mainScale() {
+        setTimeout(function(){
+        if(atiJdAdContainer) {
+            var rateA = (window.innerWidth - 26) / 310, scaleA = "scale(" + rateA + ")";
+            atiJdAdContainer.style["height"] = Math.ceil(70 * rateA) + "px";
+            atiJdAdIframe.style["-o-transform"] = scaleA;
+            atiJdAdIframe.style["-ms-transform"] = scaleA;
+            atiJdAdIframe.style["-moz-transform"] = scaleA;
+            atiJdAdIframe.style["-webkit-transform"] = scaleA;
+            atiJdAdIframe.style["transform"] = scaleA;
+        }
+        if(atiTaoAdContainer) {
+            var rateB = (window.innerWidth - 26) / 600, scaleB = "scale(" + rateB + ")";
+            atiTaoAdContainer.style["height"] = Math.ceil(140 * rateB) + "px";
+            atiTaoAdContent.style["-o-transform"] = scaleB;
+            atiTaoAdContent.style["-ms-transform"] = scaleB;
+            atiTaoAdContent.style["-moz-transform"] = scaleB;
+            atiTaoAdContent.style["-webkit-transform"] = scaleB;
+            atiTaoAdContent.style["transform"] = scaleB;
+        }
+        });
+    }
+    
+    function adRandom(els) {
+        if(els && els.length > 1)
+            els[Math.floor(Math.random() * els.length)].style.display = "block";
+    }
+    
+    function apendBefore(n, t) {
+        if(t && n)
+            t.firstChild == t ? t.appendChild(n) : t.insertBefore(n, t.firstChild);
+    }
+    
+    function apendAfter(n, t) {
+        t && n && t.appendChild(n);
+    }
+    
+    function insertBefore(n, t) {
+        t && n && t.parentNode.insertBefore(n, t);
+    }
+    
+    function insertAfter(n, t)  {      
+        if(t && n)
+            t.parentNode.lastChild == t ? t.parentNode.appendChild(n) : t.parentNode.insertBefore(n, t.nextSibling);
+    } 
+})();
+</script>
+<script type="text/template" id="tbAd">
+  tanx_c = window.tanx_c || {};
+  tanx_c.mm_16143929_2253494_31570613 = {widthEl:'PARENT',response:'TRUE'};
+  tanx_s = document.createElement("script");
+  tanx_s.type = "text/javascript";
+  tanx_s.charset = "gbk";
+  tanx_s.id = "tanx-s-mm_16143929_2253494_31570613";
+  tanx_s.async = true;
+  tanx_s.src = "http://p.tanx.com/ex?i=mm_16143929_2253494_31570613&m=1";
+  tanx_h = document.getElementsByTagName("head")[0];
+  if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+</script>
+  </body>
+</html>
