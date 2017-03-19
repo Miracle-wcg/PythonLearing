@@ -16,7 +16,7 @@ context = ssl._create_unverified_context()  # skip error SSL: CERTIFICATE_VERIFY
 
 # advanced get:
 
-req = request.Request('http://news.163.com/17/0312/19/CFBP657F0001875O.html')
+req = request.Request('http://www.baidu.com/')
 req.add_header('User-Agent',
                'Mozilla/6.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25')
 with request.urlopen(req, context=context) as f:
